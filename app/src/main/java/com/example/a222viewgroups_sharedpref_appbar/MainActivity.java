@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (id == R.id.action_open_notes) {
 
-            Toast.makeText(MainActivity.this, "Отркыть записную книжку", Toast.LENGTH_LONG).show();
+            Toast.makeText(MainActivity.this, "Открыть записную книжку", Toast.LENGTH_LONG).show();
             Intent intentNotes = new Intent(MainActivity.this, NotesActivity.class);
             startActivity(intentNotes);
 
