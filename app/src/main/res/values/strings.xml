@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">2.2.2.viewgroups_sharedpref_APPBAR</string>
+    <string name="hello_word">1.1.1 Привет, мир!</string>
+    <string name="splash_screen">1.1.2 Пингвин splash_screen!</string>
+    <string name="healthMonitoringSystem">1.1.3 Система мониторинга здоровья</string>
+
+    <string name="subscribe">1.2.1 Подписка</string>
+    <string name="textViewSubscribe">Подписка</string>
+    <string name="textViewUserName">Имя пользователя</string>
+    <string name="textViewPassword">Пароль</string>
+    <string name="textViewEmail">Электронная почта</string>
+    <string name="textOK">ОК</string>
+    <string name="textClear">Очистить</string>
+    <string name="textViewMessage">Сообщение о подписке</string>
+
+    <string name="endlessactivities">1.2.2 EndlessActivities</string>
+    <string name="imageName">Имя картинки</string>
+    <string name="buttonBack">Назад</string>
+    <string name="buttonForward">Вперед</string>
+    <string name="contentDescription">Описание картинки</string>
+
+    <string name="endlessactivities">1.2.2 EndlessActivities</string>
+
 </resources>

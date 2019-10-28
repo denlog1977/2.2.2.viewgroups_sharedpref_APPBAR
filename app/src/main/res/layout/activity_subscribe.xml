@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".SubscribeActivity">
+
+<TextView
+    android:id="@+id/textViewPassword"
+    android:layout_width="160dp"
+    android:layout_height="44dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:gravity="center"
+    android:text="@string/textViewPassword"
+    android:textAlignment="textStart"
+    android:textAllCaps="false"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textViewUserName" />
+
+<TextView
+    android:id="@+id/textViewMessage"
+    android:layout_width="301dp"
+    android:layout_height="176dp"
+    android:layout_marginTop="32dp"
+    android:gravity="center"
+    android:text="@string/textViewMessage"
+    android:textAlignment="textStart"
+    android:textAllCaps="false"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/buttonOK" />
+
+<Button
+    android:id="@+id/buttonClear"
+    android:layout_width="214dp"
+    android:layout_height="58dp"
+    android:layout_marginStart="8dp"
+    android:text="@string/textClear"
+    app:layout_constraintStart_toEndOf="@+id/buttonOK"
+    app:layout_constraintTop_toTopOf="@+id/buttonOK" />
+
+<TextView
+    android:id="@+id/textViewEmail"
+    android:layout_width="160dp"
+    android:layout_height="44dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:gravity="center"
+    android:text="@string/textViewEmail"
+    android:textAlignment="textStart"
+    android:textAllCaps="false"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textViewPassword" />
+
+<EditText
+    android:id="@+id/editTextEmail"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:ems="10"
+    android:importantForAutofill="no"
+    android:inputType="textWebEmailAddress|textPassword|textEmailAddress"
+    app:layout_constraintStart_toEndOf="@+id/textViewEmail"
+    app:layout_constraintTop_toTopOf="@+id/textViewEmail" />
+
+<TextView
+    android:id="@+id/textViewSubscribe"
+    android:layout_width="409dp"
+    android:layout_height="66dp"
+    android:background="#03A9F4"
+    android:gravity="center"
+    android:text="@string/textViewSubscribe"
+    android:textAlignment="center"
+    android:textSize="30sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<EditText
+    android:id="@+id/editTextName"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:autofillHints=""
+    android:ems="10"
+    android:inputType="textPersonName"
+    app:layout_constraintStart_toEndOf="@+id/textViewUserName"
+    app:layout_constraintTop_toTopOf="@+id/textViewUserName" />
+
+<EditText
+    android:id="@+id/editTextPassword"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:ems="10"
+    android:inputType="textPassword"
+    app:layout_constraintStart_toEndOf="@+id/textViewPassword"
+    app:layout_constraintTop_toTopOf="@+id/textViewPassword" />
+
+<TextView
+    android:id="@+id/textViewUserName"
+    android:layout_width="160dp"
+    android:layout_height="44dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="32dp"
+    android:gravity="center"
+    android:text="@string/textViewUserName"
+    android:textAlignment="textStart"
+    android:textAllCaps="false"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textViewSubscribe" />
+
+<Button
+    android:id="@+id/buttonOK"
+    android:layout_width="159dp"
+    android:layout_height="57dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:text="@string/textOK"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textViewEmail" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
