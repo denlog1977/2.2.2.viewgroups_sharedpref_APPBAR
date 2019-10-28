@@ -10,11 +10,6 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.time.LocalDate;
-import java.util.Date;
 
 public class PressureActivity extends AppCompatActivity {
 
@@ -55,9 +50,6 @@ public class PressureActivity extends AppCompatActivity {
                                                   Toast.makeText(PressureActivity.this, pressure.toString(), Toast.LENGTH_LONG).show();
                                               } else {
                                                   Log.e(TAG, "Введено некорректное занчение на экране  PressureActivity !!! ");
-
-                                                  //Toast.makeText(PressureActivity.this, pressure.toString(), Toast.LENGTH_LONG).show();
-                                                  //editTextAge.setText("");
                                               }
                                           }
                                       }

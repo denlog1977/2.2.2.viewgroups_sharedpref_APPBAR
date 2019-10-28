@@ -10,6 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity android:name=".HealthMonitoringSystemActivity"></activity>
+        <activity android:name=".HealthIndicatorActivity" />
+        <activity android:name=".PressureActivity" />
         <activity android:name=".CalendarActivity" />
         <activity android:name=".SpinnerActivity" />
         <activity android:name=".CheckBoxActivity" />
@@ -17,6 +19,7 @@
         <activity android:name=".SubscribeActivity" />
         <activity android:name=".SplashScreenActivity" />
         <activity android:name=".FirstActivity" />
+        <activity android:name=".NotesActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,7 +27,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".NotesActivity" />
     </application>
 
 </manifest>

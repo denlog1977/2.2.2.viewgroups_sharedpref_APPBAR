@@ -27,40 +27,33 @@ public class HealthMonitoringSystemActivity extends AppCompatActivity {
 
         Log.i(TAG, "Информационное сообщение при старте программы Health monitoring system");
 
-        //final TextView varTextView = (TextView) findViewById(R.id.textView);
+        final TextView varTextView = (TextView) findViewById(R.id.textView);
 
         Button buttonSave = (Button) findViewById(R.id.buttonSave);
         buttonSave.setOnClickListener(new View.OnClickListener(){
                                           @Override
                                           public void onClick(View v) {
-
-
                                               int age = 0;
-                                              int maxAge = 150;
                                               boolean success = false;
-                                              try {
+                                              String errorMessage = "некорректное занчение в поле ВОЗРАСТ !!!";
+
+                                              if (isCorrectInt(editTextAge.getText().toString(), 0, 150, errorMessage)) {
                                                   age = Integer.parseInt(editTextAge.getText().toString());
-                                                  if (age > maxAge || age < 1){
-                                                      Log.e(TAG, "Введено некорректное занчение в поле ВОЗРАСТ !!! ");
-                                                      Toast.makeText(HealthMonitoringSystemActivity.this, "Введите число от 1 до " + maxAge, Toast.LENGTH_LONG).show();
-                                                  } else {
-                                                      success = true;
-                                                  }
-                                              } catch (Exception e) {
-                                                  Log.e(TAG, "Введено некорректное занчение в поле ВОЗРАСТ !!! ");
-                                                  Toast.makeText(HealthMonitoringSystemActivity.this, "Введите число от 1 до 100", Toast.LENGTH_LONG).show();
-                                              }
-                                              if (success) {
-                                                  Patient patient = new Patient(editTextFIO.getText().toString(), age);
-                                                  Toast.makeText(HealthMonitoringSystemActivity.this, patient.toString(), Toast.LENGTH_LONG).show();
+                                                  success = true;
                                               } else {
-                                                  Log.e(TAG, "Введено некорректное значение на экране HealthMonitoringSystemActivity ");
-                                                  //editTextAge.setText("Введите число от 1 до 100");
+                                                  Log.e(TAG, errorMessage);
+                                                  Toast.makeText(HealthMonitoringSystemActivity.this, errorMessage, Toast.LENGTH_LONG).show();
                                                   editTextAge.setText("");
                                               }
 
-                                              Patient patient = new Patient(editTextFIO.getText().toString(), Integer.parseInt(editTextAge.getText().toString()));
-                                              varTextView.setText(patient.toString());
+                                              if (success) {
+                                                  Patient patient = new Patient(editTextFIO.getText().toString(), age);
+                                                  Toast.makeText(HealthMonitoringSystemActivity.this, patient.toString(), Toast.LENGTH_LONG).show();
+                                                  varTextView.setText(patient.toString());
+                                              } else {
+                                                  Log.e(TAG, errorMessage + " на экране HealthMonitoringSystemActivity ");
+                                                  editTextAge.setText("");
+                                              }
 
                                           }
                                       }
@@ -86,9 +79,22 @@ public class HealthMonitoringSystemActivity extends AppCompatActivity {
             }
         });
 
+    }
 
-
-
-
+    public boolean isCorrectInt(String inputText, int min, int max, String messageText) {
+        boolean result = false;
+        try {
+            int inputInt = Integer.parseInt(inputText);
+            if (inputInt <= max && inputInt >= min){
+                result = true;
+            } else {
+                Log.e(TAG, "Введено " + messageText);
+                Toast.makeText(HealthMonitoringSystemActivity.this, messageText + " Введите число от " + min + " до " + max, Toast.LENGTH_LONG).show();
+            }
+        } catch (Exception e) {
+            Log.e(TAG, "Введено " + messageText);
+            Toast.makeText(HealthMonitoringSystemActivity.this, "Введите число от " + min + " до " + max, Toast.LENGTH_LONG).show();
+        }
+        return result;
     }
 }
