@@ -33,11 +33,32 @@
         android:title="@string/endlessactivities"
         app:showAsAction="never" />
 
+    <item
+        android:id="@+id/action_healthMonitoringSystem"
+        android:orderInCategory="100"
+        android:title="@string/healthMonitoringSystem"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_view_components_CheckBox"
+        android:orderInCategory="100"
+        android:title="@string/view_components_CheckBox"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_spinner"
+        android:orderInCategory="100"
+        android:title="@string/spinner"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_calendarView"
+        android:orderInCategory="100"
+        android:title="@string/calendarView"
+        app:showAsAction="never" />
 
     <item
         android:id="@+id/action_open_notes"
         android:orderInCategory="100"
-        android:title="Записная книжка"
+        android:title="@string/open_notes"
         app:showAsAction="never" />
 
 </menu>

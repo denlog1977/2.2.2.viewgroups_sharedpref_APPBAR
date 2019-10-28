@@ -1,10 +1,11 @@
 <resources>
     <string name="app_name">2.2.2.viewgroups_sharedpref_APPBAR</string>
+
     <string name="hello_word">1.1.1 Привет, мир!</string>
     <string name="splash_screen">1.1.2 Пингвин splash_screen!</string>
-    <string name="healthMonitoringSystem">1.1.3 Система мониторинга здоровья</string>
 
     <string name="subscribe">1.2.1 Подписка</string>
+
     <string name="textViewSubscribe">Подписка</string>
     <string name="textViewUserName">Имя пользователя</string>
     <string name="textViewPassword">Пароль</string>
@@ -14,11 +15,43 @@
     <string name="textViewMessage">Сообщение о подписке</string>
 
     <string name="endlessactivities">1.2.2 EndlessActivities</string>
+
     <string name="imageName">Имя картинки</string>
     <string name="buttonBack">Назад</string>
     <string name="buttonForward">Вперед</string>
     <string name="contentDescription">Описание картинки</string>
 
-    <string name="endlessactivities">1.2.2 EndlessActivities</string>
+    <string name="healthMonitoringSystem">1.3 Система мониторинга здоровья</string>
+    <string name="textViewHeader">Комплексная система мониторинга здоровья.\nАвтор: Денис Логинов. (с) 2019</string>
+    <string name="textViewFIO">ФИО:</string>
+    <string name="textViewAge">Возраст:</string>
+    <string name="buttonSave">Сохранить</string>
+    <string name="buttonPressure">Показатели давления</string>
+    <string name="buttonHealthIndicator">Показатели здоровья</string>
+    <string name="textViewPressure">Показатели давления</string>
+    <string name="textViewHealthIndicator">Показатели здоровья</string>
+    <string name="inputFIO">Введите ваше ФИО</string>
+    <string name="inputAge">Введите ваш возраст</string>
+    <string name="inputUpPressure">Введите верхнее давление</string>
+    <string name="inputDownPressure">Введите нижнее давление</string>
+    <string name="inputPulse">Введите пульс</string>
+    <string name="inputTachycardia">Тахикардия</string>
+    <string name="inputDate">Введите дату измерений</string>
+    <string name="inputWeight">Введите ваш вес в кг</string>
+    <string name="inputSteps">Введите количество шагов</string>
+
+
+    <string name="view_components_CheckBox">2.1.1 view_components_CheckBox</string>
+    <string name="inputMoney">Ввод денег</string>
+
+    <string name="spinner">2.1.2 Spinner</string>
+    <string name="showAddress">Показать адрес</string>
+
+    <string name="calendarView">2.1.3 CalendarView</string>
+    <string name="chooseStartDate">"Дата-время старта задачи:"</string>
+    <string name="chooseEndDate">"Дата-время окончания задачи:"</string>
+
+    <string name="open_notes">2.2.1 Записная книжка</string>
+
 
 </resources>

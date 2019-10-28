@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".EndlessActivity"></activity>
+        <activity android:name=".HealthMonitoringSystemActivity"></activity>
+        <activity android:name=".CalendarActivity" />
+        <activity android:name=".SpinnerActivity" />
+        <activity android:name=".CheckBoxActivity" />
+        <activity android:name=".EndlessActivity" />
         <activity android:name=".SubscribeActivity" />
         <activity android:name=".SplashScreenActivity" />
         <activity android:name=".FirstActivity" />

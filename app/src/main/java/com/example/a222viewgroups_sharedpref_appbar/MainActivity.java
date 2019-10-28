@@ -73,6 +73,36 @@ public class MainActivity extends AppCompatActivity {
             Intent intentNotes = new Intent(MainActivity.this, EndlessActivity.class);
             startActivity(intentNotes);
 
+        } else if (id == R.id.action_healthMonitoringSystem) {
+
+            Toast.makeText(MainActivity.this, "1.3. Открыть Система мониторинга здоровья!", Toast.LENGTH_LONG).show();
+            Intent intentNotes = new Intent(MainActivity.this, HealthMonitoringSystemActivity.class);
+            startActivity(intentNotes);
+
+        } else if (id == R.id.action_view_components_CheckBox) {
+
+            Toast.makeText(MainActivity.this, "2.1.1. Открыть view_components_CheckBox!", Toast.LENGTH_LONG).show();
+            Intent intentNotes = new Intent(MainActivity.this, CheckBoxActivity.class);
+            startActivity(intentNotes);
+
+        } else if (id == R.id.action_spinner) {
+
+            Toast.makeText(MainActivity.this, "2.1.2. Открыть Spinner!", Toast.LENGTH_LONG).show();
+            Intent intentNotes = new Intent(MainActivity.this, SpinnerActivity.class);
+            startActivity(intentNotes);
+
+        } else if (id == R.id.action_calendarView) {
+
+            Toast.makeText(MainActivity.this, "2.1.3. Открыть CalendarView!", Toast.LENGTH_LONG).show();
+            Intent intentNotes = new Intent(MainActivity.this, CalendarActivity.class);
+            startActivity(intentNotes);
+
+        } else if (id == R.id.action_open_notes) {
+
+            Toast.makeText(MainActivity.this, "2.2.1. Открыть Записная книжка!", Toast.LENGTH_LONG).show();
+            Intent intentNotes = new Intent(MainActivity.this, NotesActivity.class);
+            startActivity(intentNotes);
+
         }
 
 
